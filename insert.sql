@@ -1,0 +1,176 @@
+--INSERT
+
+INSERT INTO Agency VALUES(6785,'GMT+3','oasatrans@oasa.gr','211-3456789','https://www.oasa.gr','Metro');
+INSERT INTO Agency VALUES(6786,'GMT+3','oasatrans@oasa.gr','211-3456789','https://www.oasa.gr','HSAP');
+
+INSERT INTO Routes VALUES(6785, 3,NULL,'�?ΕΤΡ�? - ble grammi');
+INSERT INTO Routes VALUES(6785, 1,NULL, 'ΗΣΑΠ - prasini grammi');
+
+
+
+INSERT INTO Fare_Rules VALUES(1256, 3);
+
+INSERT INTO Fare_attributes VALUES('Cash or Debit Card', 2, 'Euros','Unlimited',1256);
+
+
+INSERT INTO Calendar_Types (exception_Type_ct) values('Argies orario 06.00 - 23.00');
+
+
+ALTER SESSION SET NLS_DATE_FORMAT ='YYYY-MM-DD';
+
+
+INSERT INTO Trips VALUES(101010,'Aerodromio - Periferiaki Ymittou', 3,NULL);
+
+INSERT INTO Stops VALUES(001,'Stop001');
+INSERT INTO Stops VALUES(002,'Stop002');
+INSERT INTO Stops VALUES(003,'Stop003');
+INSERT INTO Stops VALUES(004,'Stop004');
+INSERT INTO Stops VALUES(005,'Stop005');
+
+
+INSERT INTO Trips VALUES(111111,'Kifisia - Neo Irakleio',3,NULL);
+
+INSERT INTO Stops VALUES(006,'Stop006');
+INSERT INTO Stops VALUES(007,'Stop007');
+INSERT INTO Stops VALUES(008,'Stop008');
+INSERT INTO Stops VALUES(009,'Stop009');
+INSERT INTO Stops VALUES(010,'Stop010');
+
+
+INSERT INTO Trips VALUES(121212,'Aerodromio - Periferiaki Ymittou',3,NULL);
+
+INSERT INTO Stops VALUES(011,'Stop011');
+INSERT INTO Stops VALUES(012,'Stop012');
+INSERT INTO Stops VALUES(013,'Stop013');
+INSERT INTO Stops VALUES(014,'Stop014');
+INSERT INTO Stops VALUES(015,'Stop015');
+
+
+INSERT INTO Trips VALUES(131313,'Aerodromio - Periferiaki Ymittou',1,NULL);
+
+INSERT INTO Stops VALUES(016,'Stop016');
+INSERT INTO Stops VALUES(017,'Stop017');
+INSERT INTO Stops VALUES(018,'Stop018');
+INSERT INTO Stops VALUES(019,'Stop019');
+INSERT INTO Stops VALUES(020,'Stop020');
+
+
+INSERT INTO Trips VALUES(141414,'Aerodromio - Periferiaki Ymittou',1,NULL);
+
+INSERT INTO Stops VALUES(021,'Stop021');
+INSERT INTO Stops VALUES(022,'Stop022');
+INSERT INTO Stops VALUES(023,'Stop023');
+INSERT INTO Stops VALUES(024,'Stop024');
+INSERT INTO Stops VALUES(025,'Stop025');
+
+
+INSERT INTO Trips VALUES(151515,'Aerodromio - Periferiaki Ymittou',1,NULL);
+
+INSERT INTO Stops VALUES(026,'Stop026');
+INSERT INTO Stops VALUES(027,'Stop027');
+INSERT INTO Stops VALUES(028,'Stop028');
+INSERT INTO Stops VALUES(029,'Stop029');
+INSERT INTO Stops VALUES(030,'Stop030');
+
+
+INSERT INTO Service VALUES (5,101010);
+INSERT INTO Service VALUES (6,111111);
+INSERT INTO Service VALUES (7,121212);
+INSERT INTO Service VALUES (8,131313);
+INSERT INTO Service VALUES (9,141414);
+INSERT INTO Service VALUES (10,151515);
+
+INSERT INTO Frequencies VALUES('06:00πμ','01:00πμ',1200,101010);
+INSERT INTO Frequencies VALUES('06:00πμ','01:00πμ',1200,111111);
+INSERT INTO Frequencies VALUES('06:00πμ','01:00πμ',1200,121212);
+INSERT INTO Frequencies VALUES('06:00πμ','01:00πμ',1200,131313);
+INSERT INTO Frequencies VALUES('06:00πμ','01:00πμ',1200,141414);
+INSERT INTO Frequencies VALUES('06:00πμ','01:00πμ',1200,151515);
+
+INSERT INTO Stop_times VALUES( 1, 001, 101010, '06:15:00');
+INSERT INTO Stop_times  VALUES( 5, 002, 101010,'06:20:00');
+INSERT INTO Stop_times  VALUES( 6, 003, 101010,'06:20:00');
+INSERT INTO Stop_times  VALUES( 7, 004, 101010,'06:20:00');
+INSERT INTO Stop_times  VALUES( 8, 005, 101010,'06:20:00');
+
+INSERT INTO Stop_times VALUES( 7, 006, 111111,'06:15:00');
+INSERT INTO Stop_times VALUES( 9, 007, 111111,'06:15:00');
+INSERT INTO Stop_times VALUES( 12, 008, 111111,'06:15:00');
+INSERT INTO Stop_times VALUES( 14, 009, 111111,'06:15:00');
+INSERT INTO Stop_times VALUES( 19, 010, 111111,'06:15:00');
+
+INSERT INTO Stop_times VALUES( 21, 011, 121212,'06:20:00');
+INSERT INTO Stop_times VALUES( 22, 012, 121212,'06:10:00');
+INSERT INTO Stop_times VALUES( 23, 013, 121212,'06:20:00');
+INSERT INTO Stop_times VALUES( 29, 014, 121212,'06:10:00');
+INSERT INTO Stop_times VALUES( 30, 015, 121212,'06:10:00');
+
+INSERT INTO Stop_times VALUES( 32, 016, 131313,'06:10:00');
+INSERT INTO Stop_times VALUES( 36, 017, 131313,'06:10:00');
+INSERT INTO Stop_times VALUES( 37, 018, 131313,'06:10:00');
+INSERT INTO Stop_times VALUES( 38, 019, 131313,'06:10:00');
+INSERT INTO Stop_times VALUES( 42, 020, 131313,'06:10:00');
+
+INSERT INTO Stop_times VALUES( 45, 021, 141414,'06:10:00');
+INSERT INTO Stop_times VALUES( 48, 022, 141414,'06:10:00');
+INSERT INTO Stop_times VALUES( 49, 023, 141414,'06:10:00');
+INSERT INTO Stop_times VALUES( 51, 024, 141414,'06:10:00');
+INSERT INTO Stop_times VALUES( 56, 025, 141414,'06:10:00');
+
+INSERT INTO Stop_times VALUES( 57, 026, 151515,'06:10:00');
+INSERT INTO Stop_times VALUES( 58, 027, 151515,'06:10:00');
+INSERT INTO Stop_times VALUES( 59, 028, 151515,'06:10:00');
+INSERT INTO Stop_times VALUES( 61, 029, 151515,'06:10:00');
+INSERT INTO Stop_times VALUES( 62, 030, 151515,'06:10:00');
+
+
+
+INSERT INTO Calendar VALUES('Kathimerines',5,'2023-01-01','2023-12-29',101010);
+INSERT INTO Calendar VALUES('Kathimerines',6,'2023-01-01','2023-12-29',101010);
+INSERT INTO Calendar VALUES('Kathimerines',7,'2023-01-01','2023-12-29',131313);
+INSERT INTO Calendar VALUES('Kathimerines',8,'2023-01-01','2023-12-29',141414);
+INSERT INTO Calendar VALUES('Kathimerines',9,'2023-01-01','2023-12-29',151515);
+INSERT INTO Calendar VALUES('Kathimerines',10,'2023-01-01','2023-12-29',101010);
+
+
+
+INSERT INTO Calendar VALUES('Sabbato',5,'2023-01-07','2023-12-30',101010);
+INSERT INTO Calendar VALUES('Sabbato',6,'2023-01-07','2023-12-30',121212);
+INSERT INTO Calendar VALUES('Sabbato',7,'2023-01-07','2023-12-30',131313);
+INSERT INTO Calendar VALUES('Sabbato',8,'2023-01-07','2023-12-30',141414);
+INSERT INTO Calendar VALUES('Sabbato',9,'2023-01-07','2023-12-30',151515);
+INSERT INTO Calendar VALUES('Sabbato',10,'2023-01-07','2023-12-30',111111);
+
+
+INSERT INTO Calendar VALUES('Kiriakes/Argies',5,'2023-02-01','2023-12-31',121212);
+INSERT INTO Calendar VALUES('Kiriakes/Argies',6,'2023-02-01','2023-12-31',111111);
+INSERT INTO Calendar VALUES('Kiriakes/Argies',7,'2023-02-01','2023-12-31',141414);
+INSERT INTO Calendar VALUES('Kiriakes/Argies',8,'2023-02-01','2023-12-31',141414);
+INSERT INTO Calendar VALUES('Kiriakes/Argies',9,'2023-02-01','2023-12-31',141414);
+INSERT INTO Calendar VALUES('Kiriakes/Argies',10,'2023-02-01','2023-12-31',151515);
+
+
+UPDATE TRIPS set service_id_trips = 5 WHERE trips_id = 101010;
+UPDATE TRIPS set service_id_trips = 6 WHERE trips_id = 111111;
+UPDATE TRIPS set service_id_trips = 7 WHERE trips_id = 121212;
+UPDATE TRIPS set service_id_trips = 8 WHERE trips_id = 131313;
+UPDATE TRIPS set service_id_trips = 9 WHERE trips_id = 141414;
+UPDATE TRIPS set service_id_trips = 10 WHERE trips_id = 151515;
+
+
+SELECT * FROM Fare_Rules;
+SELECT * FROM Fare_attributes;
+SELECT * FROM Service;
+SELECT * FROM Calendar_Types;
+
+SELECT * FROM Stop_Times;
+SELECT * FROM Stops;
+
+SELECT * FROM Trips;
+SELECT * FROM Frequencies;
+SELECT * FROM Calendar;
+
+SELECT * FROM Routes;
+SELECT * FROM Agency;
+
+COMMIT;
